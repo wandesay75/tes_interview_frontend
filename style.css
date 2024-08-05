@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+header {
+    justify-content: space-around;
+    margin-right: 250px;
+}
+
+.container {
+    display: flex;
+}
+
+
+.sidebar {
+    width: 250px;
+    background-color: #f3f3f3;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: inherit;
+    margin-left: 15px;
+}
+
+.profile p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #EF7496;
+    color:#fff;
+    
+}
+
+.delivery {
+    margin-top: auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.delivery img {
+    width: 100%;
+    
+}
+
+.content {
+    flex: 1px;
+    padding: 20px;
+}
+
+.items p {
+    text-align: left;
+    padding: 20px;
+}
+
+.items i {
+ margin-left: 95px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.kategori {
+    display: flex;
+    margin-top: 20px;
+}
+
+.kategori p {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.item {
+    text-align: center;
+    width: 200px;
+    background-color: #DADADA;
+    border-radius: 50px;
+}
+
+.item img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.articles {
+    margin-top: 20px;
+}
+
+.articles h2 {
+    margin-bottom: 10px;
+}
+
+article {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+article p {
+    font-size: 0.8em;
+    color: #777;
+}
+
+
+@media (max-width: 768px) {
+
+    header{
+        justify-content: space-between;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .kategori {
+        flex-wrap: wrap;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
